@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <script>
+      const labels = {{ label | safe }};
+
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: "No Of Tourists",
+            backgroundColor: "rgb(255, 0, 0)",
+            borderColor: "rgb(255, 0, 0)",
+            data: {{ value | safe }},
+          },
+        ],
+      };
+
+      const configforlinechart = {
+        type: "line",
+        data: data,
+        options: {
+            responsive : false
+        },
+      };
+
+      const configforbarchart = {
+        type: "bar",
+        data: data,
+        options: {
+            responsive : false
+        },
+      };
+    </script>
+
+    <canvas id="linechart" width="900" height="400"> </canvas>
+    <script>
+      const LineChart = new Chart(
+        document.getElementById("linechart"),
+        configforlinechart
+      );
+    </script>
+
+    <canvas id="barchart" width="900" height="400"> </canvas>
+    <script>
+      const BarChart = new Chart(
+        document.getElementById("barchart"),
+        configforbarchart
+      );
+    </script>
+  </body>
+</html>

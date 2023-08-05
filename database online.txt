@@ -1,0 +1,282 @@
+https://bhuvan-app1.nrsc.gov.in/culture_monuments/
+
+
+Reference : : : : : https://www.yatra.com/indian-monuments
+
+
+
+Features  
+
+City Wise Filter
+State Wise Filter
+Graphs for current favourite place.
+
+admin role can check the prediction for number of tourists in next one month.
+admin can check individual travel history based on aadhar number.
+
+
+Unique code from DB can be used to generate QR Code
+Generate pdf for the QR Code and send email to user
+
+  
+
+Registration fields :  
+Name, Surname , Aadhar Number (PK) , Address, Mobile Number, Email , Password, Confirm Password
+
+Login Fields : 
+Aadhar card number, Password
+
+Tables:  
+
+User (Aadhar Number (PK), Name, Surname, Mobile Number, Email, Address, Password)
+Monuments (Id (PK), Name , City , Price for an adult ,Price for a child , State ,Image)      
+Museums (Id (PK), Name , City , Price for an adult ,Price for a child , State , Image)        
+Heritage Sites (Id (PK), Name , City , Price for an adult ,Price for a child , State ,Image) 
+Booking (BookingId(PK), Aadhar number (FK), Id(FK), Username, User Email, Unique Code for booking using BookingId+AadharCard)
+
+Personalized Recommender System
+
+
+
+
+//  insert into monuments values (8,'Tawang Buddhist Monastery','Tawang','300','200','Arunachal Pradesh');
+
+// insert into monuments values (13,'Triumala Venkateswara Temple','Tirupati','300','200','Andhra Pradesh');
+
+//insert into monuments values (13,'Navagraha Temple','Guwahati','0','0','Assam');
+insert into monuments values (14,'Rang Ghar','Joysagar','20','20','Assam');
+insert into monuments values (15,'Talatal Ghar','Joysagar','0','0','Assam');
+insert into monuments values (16,'Charaideo','Sivasagar','0','0','Assam');
+insert into monuments values (17,'Siva Dol','Sivasagar','0','0','Assam');
+
+
+
+//insert into monuments values(18,'Tomb of Sham Sher Khan','Shamshernagar','25','0','Bihar');
+insert into monuments values(19,'Rock Temple','Bhagalpur','0','0','Bihar');
+insert into monuments values(20,'Vikramshila Monastery','Bhagalpur','0','0','Bihar');
+insert into monuments values(21,'Site of Mauryan Palace','Patna','20','10','Bihar');
+
+
+// insert into monuments values(22,'Laxman Temple','Mahasamund','20','10','Chhattisgarh');
+insert into monuments values(23,'Bastar Palace','Jagdalpur','200','50','Chhattisgarh');
+insert into monuments values(24,'Kutumsar Caves','Bastar','25','25','Chhattisgarh');
+insert into monuments values(25,'Ratanpur Fort','Bilaspur','0','0','Chhattisgarh');
+
+//insert into monuments values(26,'Azad Maidan','Panaji','0','0','Goa');
+insert into monuments values(27,'St. Augustine Tower','Goa Velha','0','0','Goa');
+insert into monuments values(28,'Viceroy Arch','Goa Velha','0','0','Goa');
+insert into monuments values(29,'Aguara Fort','Candolim','0','0','Goa');
+insert into monuments values(30,'Se Cathedral','Goa Velha','0','0','Goa');
+
+
+
+
+
+insert into monuments values(31,'Laxmi Villas Palace','Vadodara','200','100','Gujarat');
+insert into monuments values(32,'Mahabat Maqbara','Junagadh','0','0','Gujarat');
+insert into monuments values(33,'Rani ki Vav','Patan','20','20','Gujarat');
+insert into monuments values(34,'Statue of Unity','Kevadiya','120','60','Gujarat');
+insert into monuments values(35,'Sun Temple','Modhera','25','15','Gujarat');
+insert into monuments values(36,'Dholavira','Kutch','0','0','Gujarat');
+insert into monuments values(37,'Adalaj Stepwell','Adalaj','25','15','Gujarat');
+insert into monuments values(38,'Lothal','Saragwala','5','0','Gujarat');
+insert into monuments values(39,'Siddi Saiyyed Mosque','Ahmedabad','0','0','Gujarat');
+insert into monuments values(40,'Sabarmati Ashram','Ahmedabad','0','0','Gujarat');
+
+
+
+insert into monuments values(41,'Suraj Kund','Faridabad','120','50','Haryana');
+insert into monuments values(42,'Shobha Sarovar','Narnaul','0','0','Haryana');
+insert into monuments values(43,'Jal Mahal','Narnaul','10','10','Haryana');
+insert into monuments values(44,'Chor Gumbad','Narnaul','0','0','Haryana');
+insert into monuments values(45,'Birbal ka Chatta','Narnaul','75','25','Haryana');
+
+
+insert into monuments values(46,'Hidimba Devi Temple','Manali','0','0','Himachal Pradesh');
+insert into monuments values(47,'Tabo Buddhist Monastery','Lahaul Spiti','0','0','Himachal Pradesh');
+insert into monuments values(48,'Ruined Fort','Kangra','20','10','Himachal Pradesh');
+insert into monuments values(49,'Rock Cut Temple','Lahalpur','20','20','Himachal Pradesh');
+insert into monuments values(50,'Rashtrapati Niwas','Shimla','30','30','Himachal Pradesh');
+
+
+insert into monuments values(51,'Baba Baidyanath Temple','Dardmara','50','50','Jharkhand');
+insert into monuments values(52,'Trikuta Parvata','Deoghar','0','0','Jharkhand');
+insert into monuments values(53,'Pahari Mandir','Ranchi','0','0','Jharkhand');
+insert into monuments values(54,'Deori MAndir','Diuri','40','30','Jharkhand');
+insert into monuments values(55,'Sun Temple','Ranchi','0','0','Jharkhand');
+
+
+insert into monuments values(56,'Hampi','Hampi','35','25','Karnataka');
+insert into monuments values(57,'Pattadakal monuments','Pattadakal','35','25','Karnataka');
+insert into monuments values(58,'Gol Gumbaz','Bijapur','20','20','Karnataka');
+insert into monuments values(59,'Palace of Tipu Sultan','Bengaluru','20','10','Karnataka');
+insert into monuments values(60,'Ibrahim Roza','Bijapur','20','10','Karnataka');
+
+
+
+insert into monuments values(61,'Mattancherry Palace','Kochi','0','0','Kerala');
+insert into monuments values(62,'Bekal Fort','Bekal','20','20','Kerala');
+insert into monuments values(63,'Kudakallu Parambu','Kochi','0','0','Kerala');
+insert into monuments values(64,'St Angelo Fort','Kannur','0','0','Kerala');
+insert into monuments values(65,'Vizhinjam rock caves','Thiruvananthapuram','10','5','Kerala');
+
+
+insert into monuments values(66,'Khajuraho','Khajuraho','35','35','Madhya Pradesh');
+insert into monuments values(67,'Sanchi Stupa','Sanchi','35','25','Madhya Pradesh');
+insert into monuments values(68,'Gwallior Fort','Gwallior','20','10','Madhya Pradesh');
+insert into monuments values(69,'Hoshang Shah’s Tomb','Mandu','20','10','Madhya Pradesh');
+insert into monuments values(70,'Roopmati’s Pavilion','Mandu','20','10','Madhya Pradesh');
+
+
+insert into monuments values(71,'Ajanta Caves','Aurangabad','35','35','Maharastra');
+insert into monuments values(72,'Ellora Caves','Aurangabad','35','25','Maharastra');
+insert into monuments values(73,'Elephanta Caves','Mumbai','35','35','Maharastra');
+insert into monuments values(74,'Aga Khan Palace','Pune','20','10','Maharastra');
+insert into monuments values(75,'Shaniwarwada','Pune','20','10','Maharastra');
+
+
+
+insert into monuments values(76,'Bishnupur Temples','Bishunupur','20','10','Manipur');
+insert into monuments values(77,'Red Hill','Bishunupur','0','0','Manipur');
+insert into monuments values(78,'Khongjom War Memorial','Khongjom','0','0','Manipur');
+insert into monuments values(79,'Kangla Fort','Kangla','0','0','Manipur');
+insert into monuments values(80,'Shaheed Minar','Imphal','0','0','Manipur');
+
+insert into monuments values(81,'Narthiang Monoliths','Jowai','0','0','Meghalaya');
+insert into monuments values(82,'Kiang Nongbah Monument','Jowai','0','0','Meghalaya');
+insert into monuments values(83,'Manipur Memorial','Shillong','25','5','Meghalaya');
+insert into monuments values(84,'David Scott’s Monument','Cherrapunji','100','40','Meghalaya');
+
+
+
+insert into monuments values(85,'Vangchia Monuments','Champhai','0','0','Mizoram');
+insert into monuments values(86,'Sibuta Lung','Aizawl','0','0','Mizoram');
+insert into monuments values(87,'Paruallung','Aizawl','0','0','Mizoram');
+insert into monuments values(88,'Mura Puk','Champhai','0','0','Mizoram');
+insert into monuments values(89,'Lungpher Puk','Champhai','0','0','Mizoram');
+insert into monuments values(90,'Thlanpial','Aizawl','0','0','Mizoram');
+
+
+
+insert into monuments values(91,'Kohima War Cemetry','Kohima','0','0','Nagaland');
+insert into monuments values(92,'Nagaland Bamboo Resource Centre','Dimapur','0','0','Nagaland');
+insert into monuments values(93,'Kachari Ruins','Dimapur','0','0','Nagaland');
+insert into monuments values(94,'Catholic Church','Kohima','0','0','Nagaland');
+insert into monuments values(95,'Ungma','Mokokchung','0','0','Nagaland');
+
+
+insert into monuments values(96,'Sun Temple Konark','Puri','35','35','Odisha');
+insert into monuments values(97,'Udayagiri Caves','Bhubaneshwar','20','10','Odisha');
+insert into monuments values(98,'Ashokan Rock','Bhubaneshwar','0','0','Odisha');
+insert into monuments values(99,'Rajarani Temple','Bhubaneshwar','0','0','Odisha');
+insert into monuments values(100,'Barabati Fort','Cuttack','5','5','Odisha');
+
+
+
+insert into monuments values(101,'Golden Temple','Amritsar','0','0','Punjab');
+insert into monuments values(102,'Jallianwala Bagh','Amritsar','0','0','Punjab');
+insert into monuments values(103,'Wagah Border','Hardo Rattan','0','0','Punjab');
+insert into monuments values(104,'Gurudwara Mata Kaulan','Amritsar','0','0','Punjab');
+insert into monuments values(105,'Sheesh Mahal','Patiala','0','0','Punjab');
+
+
+
+insert into monuments values(106,'Chottorgarh Fort','Chittorgarh','35','20','Rajasthan');
+insert into monuments values(107,'Kumbalgarh Fort','Kumbalgarh','35','20','Rajasthan');
+insert into monuments values(108,'Deeg Palace','Bharatpur','20','10','Rajasthan');
+insert into monuments values(109,'Rathambhore Fort','Sawai Madhopur','0','0','Rajasthan');
+insert into monuments values(110,'City Palace','Jaipur','200','200','Rajasthan');
+
+
+insert into monuments values(111,'Dubdi Monastery','Yuksom','20','20','Sikkim');
+insert into monuments values(112,'Rabdentse Ruins','Pelling','0','0','Sikkim');
+insert into monuments values(113,'Siddheshwar Dham (Char Dham)','Namchi','0','0','Sikkim');
+insert into monuments values(114,'Pemayangtse Monastery','Pelling','20','20','Sikkim');
+insert into monuments values(115,'KirateshwarMahadev Temple','Legship','0','0','Sikkim');
+
+
+insert into monuments values(116,'Chola Temples','Chennai','0','0','Tamil Nadu');
+insert into monuments values(117,'Dindigul Forts','Dindigul','20','20','Tamil Nadu');
+insert into monuments values(118,'St George Fort','Chennai','20','20','Tamil Nadu');
+insert into monuments values(119,'Gingee Fort','Gingee','20','20','Tamil Nadu');
+insert into monuments values(120,'Eladipattam','Pudukkottai','20','20','Tamil Nadu');
+
+
+insert into monuments values(121,'Charminar','Hyderabad','5','5','Telangana');
+insert into monuments values(122,'Warangal Fort','Warangal','5','5','Telangana');
+insert into monuments values(123,'Taj Falaknuma Palace','Hyderabad','500','300','Telangana');
+insert into monuments values(124,'Khammam Fort','Khammam','0','0','Telangana');
+insert into monuments values(125,'Purani Haveli','Hyderabad','80','50','Telangana');
+
+
+insert into monuments values(126,'Neermahal Palace','Rudijala','50','50','Tripura');
+insert into monuments values(127,'Ujjayata Palace','Agartala','15','15','Tripura');
+insert into monuments values(128,'Sundari Temple','Agartala','0','0','Tripura');
+insert into monuments values(129,'Devtamura','Gomati','0','0','Tripura');
+insert into monuments values(130,'Pilak','Paschim Pillak','10','10','Tripura');
+
+
+insert into monuments values(131,'Bajinath Temples','Bageshwar','0','0','Uttarakhand');
+insert into monuments values(132,'Ancient Palace','Ramnagar','0','0','Uttarakhand');
+insert into monuments values(133,'Sun Temple','Almora','0','0','Uttarakhand');
+insert into monuments values(134,'Jageshwar Temples','Almora','0','0','Uttarakhand');
+insert into monuments values(135,'AvantiSwami Temple','Ramnagar','0','0','Uttarakhand');
+
+
+
+insert into monuments values(136,'Taj Mahal','Agra','45','45','Uttar Pradesh');
+insert into monuments values(137,'Fatehpur Sikri Complex','Fatehpur Sikri','35','35','Uttar Pradesh');
+insert into monuments values(138,'Agra Fort','Agra','35','25','Uttar Pradesh');
+insert into monuments values(139,'Mariams Tomb','Agra','20','10','Uttar Pradesh');
+insert into monuments values(140,'Sakyas Site','Siddharth nagar','0','0','Uttar Pradesh');
+
+
+insert into monuments values(141,'Victor Jubilee Palace','Cooch Behar','10','0','West Bengal');
+insert into monuments values(142,'Radhabinod Temple','Jaydev Kenduli','10','0','West Bengal');
+insert into monuments values(143,'Clive House','Dumdum','0','0','West Bengal');
+insert into monuments values(144,'Lukochuri Gateway','Chandangar','20','10','West Bengal');
+insert into monuments values(145,'Hazarduari Palace','Murshidabad','5','0','West Bengal');
+
+
+
+insert into monuments values(146,'Poonch Fort','Poonch','0','0','Jammu Kashmir');
+insert into monuments values(147,'Parihaspora','Srinagar','0','0','Jammu Kashmir');
+insert into monuments values(148,'Balidan Stambh','Jammu','0','0','Jammu Kashmir');
+insert into monuments values(149,'Hari Parbat Fort','Srinagar','0','0','Jammu Kashmir');
+insert into monuments values(150,'Leh Palace','Leh','15','10','Jammu Kashmir');
+
+
+
+insert into monuments values(151,'Capitol Complex','Chandigarh','0','0','Haryana');
+insert into monuments values(152,'Tower of Shadows','Chandigarh','0','0','Haryana');
+insert into monuments values(153,'Martyrs Memorial','Chandigarh','0','0','Haryana');
+insert into monuments values(154,'Dudni Lake','Dadra and Nagar Haveli','0','0','Gujarat');
+insert into monuments values(155,'Nakshatra Garden','Dadra and Nagar Haveli','0','0','Gujarat');
+insert into monuments values(156,'Vanganga Lake Garden','Dadra and Nagar Haveli','20','20','Gujarat');
+insert into monuments values(157,'Om Temple','Dadra and Nagar Haveli','0','0','Gujarat');
+insert into monuments values(158,'Gangeshwar Temple','Daman and Diu','0','0','Gujarat');
+insert into monuments values(159,'Diu Fort','Daman and Diu','0','0','Gujarat');
+insert into monuments values(160,'Dominican Monastery','Daman and Diu','0','0','Gujarat');
+insert into monuments values(161,'Qutub Minar','Delhi','35','25','Delhi');
+insert into monuments values(162,'India Gate','Delhi','0','0','Delhi');
+insert into monuments values(163,'Raj Ghat','Delhi','0','0','Delhi');
+insert into monuments values(164,'India Gate','Delhi','0','0','Delhi');
+insert into monuments values(165,'Safdarjung Tomb','Delhi','25','0','Delhi');
+insert into monuments values(166,'Likir Monastery','Ladakh','20','0','Jammu and Kashmir');
+insert into monuments values(167,'Stok Palace','Ladakh','50','20','Jammu and Kashmir');
+insert into monuments values(168,'Mohiyudeen Mosque','Lakshadweep','0','0','Lakshadweep');
+insert into monuments values(169,'French War Memorial','Puducherry','0','0','Puducherry');
+insert into monuments values(170,'Aayi Mandapam','Puducherry','0','0','Puducherry');
+
+
+
+
+
+
+// admin created
+// tourists created
+// monuments created
+// museums created
+// heritage sites created 
+// bookings created
+
